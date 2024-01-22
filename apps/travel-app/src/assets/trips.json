@@ -1,0 +1,17 @@
+[ 
+    {
+      "id": 1,
+      "title": "Trip 1",
+      "description": "This is the first trip"
+    },
+    {
+        "id": 2,
+        "title": "Trip 2",
+        "description": "This is the second trip"
+      },
+      {
+        "id": 3,
+        "title": "Trip 3",
+        "description": "This is the third trip"
+      }
+]

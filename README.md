@@ -1,3 +1,44 @@
+RUN:  yarn nx serve travel-app  
+TEST: yarn nx serve travel-app  
+TEST: yarn nx serve travel-lib
+E2E: yarn nx e2e travel-app-e2e
+BUILD: yarn nx build travel-app
+
+CLI generate commands
+ 
+in travel-lib
+yarn nx g @nx/angular:pipe capitalize --directory src/pipes
+
+in travel-app
+yarn nx g @nx/angular:component overview --directory src/pages
+
+ngrx feature
+
+https://dev.to/this-is-angular/ngrx-feature-creator-2c72
+
+angular embedded styling
+
+https://angular.io/guide/component-styles
+
+view encapsulation
+
+https://angular.io/guide/view-encapsulation
+
+
+docker
+
+https://levioconsulting.com/insights/how-to-dockerize-an-angular-application-with-nginx/
+https://dev.to/oneofthedevs/docker-angular-nginx-37e4
+
+JSON SERVER
+
+https://github.com/typicode/json-server
+
+*for
+
+https://dev.to/this-is-angular/declarative-loop-control-flow-in-angular-17-97d
+
+
 # NxTravel
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>

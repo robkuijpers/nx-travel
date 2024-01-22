@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <div class="container">
+        <h1 class="page-title">Travel Overview</h1>
+        <div>
+            @if (trips$ | async; as trips) {
+            @for (trip of trips; track trip.id) {
+            <div class="row" [ngClass]="{'active' : trip.id === selectedTripId()}" (click)="onTripSelected(trip.id)">
+                <a [routerLink]="['/detail', trip.id]">
+                    <span>{{ trip.title }} </span><span>{{ trip.description}}</span>
+                </a>
+            </div>
+            } @empty {
+            <div>No trips found</div>
+            }
+            } @else {
+            <div>Loading...</div>
+            }
+        </div>
+    </div>
+</div>
